@@ -60,7 +60,11 @@ public class FracCalc {
 			}
 		}
 
-		return fraction2;
+//		return fraction2;
+		int w = getWhole(fraction2);
+		int n = getNumerator(fraction2);
+		int d = getDenomenator(fraction2);
+		return "whole:" + w  + " numerator:" + n  + " denominator:" + d;
 //		fraction1 = reduceFraction(fraction1);
 //		fraction2 = reduceFraction(fraction2);
 //
