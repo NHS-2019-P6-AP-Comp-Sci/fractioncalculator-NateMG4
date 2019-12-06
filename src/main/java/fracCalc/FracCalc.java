@@ -98,7 +98,6 @@ public class FracCalc {
 		int w1 = getWhole(fraction);
 		int n1 = getNumerator(fraction);
 		int d1 = getDenomenator(fraction);
-		System.out.println("improper: " + (w1 * d1) + "/" + d1);
 		if (w1 < 0 && n1 > 0)
 			n1 *= Math.signum(w1);
 		n1 += w1 * d1;
@@ -106,7 +105,6 @@ public class FracCalc {
 	}
 
 	public static String preformOperation(String fraction1, String fraction2, String op) {
-		System.out.println(fraction1 + " " + op + " " + fraction2);
 		if (op.equals("+"))
 			return add(fraction1, fraction2);
 		else if (op.equals("-"))
@@ -151,9 +149,7 @@ public class FracCalc {
 		int frac2Mult = d1;
 
 		n1 *= frac1Mult;
-		System.out.println("Numerator: " + n1);
 		d1 *= frac1Mult;
-		System.out.println("Denomenator: " + d1);
 		n2 *= frac2Mult;
 		d2 *= frac2Mult;
 
