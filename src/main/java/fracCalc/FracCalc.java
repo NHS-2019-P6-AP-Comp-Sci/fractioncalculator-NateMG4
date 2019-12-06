@@ -61,22 +61,22 @@ public class FracCalc {
 		}
 
 //		return fraction2;
-		int w = getWhole(fraction2);
-		int n = getNumerator(fraction2);
-		int d = getDenomenator(fraction2);
-		return "whole:" + w  + " numerator:" + n  + " denominator:" + d;
-//		fraction1 = reduceFraction(fraction1);
-//		fraction2 = reduceFraction(fraction2);
-//
-//		fraction1 = toImproper(fraction1);
-//		fraction2 = toImproper(fraction2);
-//
-//		String answer = preformOperation(fraction1, fraction2, op);
-//
-//		if (Math.signum(getWhole(answer)) == -1) {
-//			return toString(getWhole(answer), Math.abs(getNumerator(answer)), getDenomenator(answer));
-//		}
-//		return answer;
+//		int w = getWhole(fraction2);
+//		int n = getNumerator(fraction2);
+//		int d = getDenomenator(fraction2);
+//		return "whole:" + w  + " numerator:" + n  + " denominator:" + d;
+		fraction1 = reduceFraction(fraction1);
+		fraction2 = reduceFraction(fraction2);
+
+		fraction1 = toImproper(fraction1);
+		fraction2 = toImproper(fraction2);
+
+		String answer = preformOperation(fraction1, fraction2, op);
+
+		if (Math.signum(getWhole(answer)) == -1) {
+			return toString(getWhole(answer), Math.abs(getNumerator(answer)), getDenomenator(answer));
+		}
+		return answer;
 	}
 
 	public static String toString(int w, int n, int d) {
